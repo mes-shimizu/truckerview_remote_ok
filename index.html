@@ -12,18 +12,6 @@
 	if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
 			document.write('<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">');
 	}
-
-	const audio = new Audio('sound_03.mp3');
-	function playAudio(duration) {
-	  audio.currentTime = 0;
-	  audio.play();
-	  setTimeout(() => {
-	    audio.pause();
-	    if (duration > 0) {
-	      playAudio(duration - audio.duration);
-	    }
-	  }, audio.duration * 1000);
-	}
 </script>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
