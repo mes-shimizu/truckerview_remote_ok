@@ -1,0 +1,442 @@
+@charset "UTF-8";
+
+.view_area {
+	width: 100%;
+	height: auto;
+	border-top: solid 10px #fff; /*要*/
+	border-right: solid 10px #fff;
+	border-bottom: solid 10px #fff;
+	border-left: solid 10px #fff;
+	padding: 100px 5% 150px;
+	background-color: #dcf3ff;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+.terminal_name{
+	font-size: 36px;
+	padding-bottom:5px;
+	border-bottom: solid 5px #219bdd;
+}
+.apri_name{
+	width: 60%;
+	text-align: center;
+	min-width: 360px;
+	margin: 15px auto 30px;
+	height: 45px;
+	font-size:30px;
+}
+.apri_name img{
+	display: inline-block;
+	width: 90px;
+	height: auto;
+	vertical-align: middle;
+}
+.apri_name h3 {
+	width: 280px;
+	margin: 10px auto 0;
+    overflow: hidden;
+    text-align: center;
+}
+.apri_name h3 span {
+    display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+    padding: 0 1em;
+    position: relative;
+}
+.apri_name h3 span:before,
+.apri_name h3 span:after {
+    border-top: 10px solid;
+    content: "";
+    position: absolute;
+    top: 35%;
+    width: 99em;
+}
+.apri_name h3 span:before {
+    right: 100%;
+}
+ 
+.apri_name h3 span:after {
+    left: 100%;
+}
+form#file_upload_area{
+	display: block;
+	margin: 50px auto 0;
+}
+.file_upload_area_wrap{
+	margin: 0 auto;
+    width: 800px;
+	max-width: 100%;
+    padding: 15px;
+    text-align: center;
+	background-color: #efefef;
+}
+.upload_area{
+    margin: auto;
+    width: 100%;
+    position: relative;
+    border: 3px dashed #ffffff;
+}
+.upload_area.dragover {
+	border: 3px dashed #7f7f7f;
+	background: rgba(165, 165, 165, 0.6);
+}
+.upload_area p{
+	font-size: 16px;
+	margin-top: 10px;
+	letter-spacing:1px;
+}
+.upload_area img {
+	display: block;
+	width: 75px;
+	height: 75px;
+	margin: 100px auto;
+}
+.view_area .error {
+	width: 50%;
+	min-width: 600px;
+	margin: 0 auto;
+	background-color: #e9ffff;
+	border: solid 2px #23b1b2;
+	border-radius: 10px;
+	padding: 5px 30px;
+}
+.view_area .error p {
+	font-size: 20px;
+}
+
+#input-files {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#file_name {
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+    font-size: 12px;
+    color: #333;
+	text-align: center;
+}
+.upload_area.dragging {
+    border-color: #23b1b2;
+}
+.file_upload_btn_area{
+	margin-top: 25px;
+	text-align: center;
+}
+#file_cancel_btn,
+#file_submit_btn{
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing:1px;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+	margin: 0 5px;
+    background-color:#23b1b2;
+    border: none;
+    box-shadow:none;
+    cursor: pointer;
+}
+#file_cancel_btn:hover,
+#file_submit_btn:hover{
+    background-color:#19A1A2;
+}
+#file_submit_btn:active{
+    background-color:#19A1A2;
+}
+.view_area .image{
+	width: 100%;
+	position: absolute;
+	bottom: 0; left:0;
+	z-index:-1;
+}
+.view_area .image img{
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) and (orientation: portrait) {
+
+	.view_area {
+		width: 100%;
+		height: auto;
+		border-top: solid 10px #fff; /*要*/
+		border-right: solid 10px #fff;
+		border-bottom: solid 10px #fff;
+		border-left: solid 10px #fff;
+		padding: 50px 5% 0;
+		background-color: #dcf3ff;
+		overflow: hidden;
+		position: relative;
+		z-index: 2;
+	}
+	.terminal_name{
+		font-size: 40px;
+		padding-bottom:15px;
+		border-bottom: solid 5px #219bdd;
+	}
+	.apri_name{
+		width: 75%;
+		text-align: center;
+		min-width: 360px;
+		margin: 15px auto 60px;
+		height: 45px;
+		font-size:36px;
+	}
+	.apri_name h3 {
+		width: 280px;
+		margin: 10px auto 0;
+		overflow: hidden;
+		text-align: center;
+	}
+	.apri_name h3 span {
+		display: inline-block;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 0 1em;
+		position: relative;
+	}
+	.apri_name h3 span:before,
+	.apri_name h3 span:after {
+		border-top: 10px solid;
+		content: "";
+		position: absolute;
+		top: 35%;
+		width: 99em;
+	}
+	.apri_name h3 span:before {
+		right: 100%;
+	}
+
+	.apri_name h3 span:after {
+		left: 100%;
+	}
+	form#file_upload_area{
+		display: block;
+		margin: 75px auto 0;
+	}
+	.file_upload_area_wrap{
+		margin: 0 auto;
+		width: 700px;
+		max-width: 100%;
+		padding: 30px;
+		text-align: center;
+		background-color: #efefef;
+	}
+	.upload_area{
+		margin: auto;
+		width: 100%;
+		position: relative;
+		border: 3px dashed #fff;
+	}
+	.upload_area p{
+		font-size: 16px;
+		margin-top: 20px;
+		letter-spacing:1px;
+	}
+	.upload_area img {
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 7.5vh auto;
+	}
+	#input-files {
+		top: 0;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	#file_name {
+		width: 100%;
+		position: absolute;
+		bottom: 30px;
+		font-size: 12px;
+		color: #333;
+		text-align: center;
+	}
+	.upload_area.dragging {
+		border-color: #23b1b2;
+	}
+	.file_upload_btn_area{
+		margin-top: 25px;
+		text-align: center;
+	}
+	#file_cancel_btn,
+	#file_submit_btn{
+		display: inline-block;
+		color: #fff;
+		font-size: 16px;
+		letter-spacing:1px;
+		border-radius: 10px;
+		width: 250px;
+		height: 50px;
+		margin: 0 5px;
+		background-color:#23b1b2;
+		border: none;
+		box-shadow:none;
+		cursor: pointer;
+	}
+	#file_cancel_btn:hover,
+	#file_submit_btn:hover{
+		background-color:#19A1A2;
+	}
+	#file_submit_btn:active{
+		background-color:#19A1A2;
+	}
+	
+}
+
+@media screen and (min-width:0px) and (max-width:767px){
+	
+	.view_area{
+		width: 100%;
+		height: auto;
+		border-top: solid 5px #fff;	/*要*/
+		border-right: solid 5px #fff;
+		border-bottom: solid 5px #fff;
+		border-left: solid 5px #fff;
+		padding:25px 2% 150px;
+		background-color: #dcf3ff;
+		overflow: hidden;
+		position: relative;
+		z-index:2;
+	}
+	.terminal_name{
+		font-size: 20px;
+		padding-bottom:5px;
+		border-bottom: solid 5px #219bdd;
+	}
+	.apri_name{
+		width: 90%;
+		text-align: center;
+		min-width:unset;
+		margin: 5px auto 10px;
+		height: auto;
+		font-size:30px;
+	}
+	.apri_name img{
+		display: inline-block;
+		width: 80px;
+		height: auto;
+		vertical-align: middle;
+	}
+	.apri_name h3 {
+		width: 280px;
+		margin: 10px auto 0;
+		overflow: hidden;
+		text-align: center;
+	}
+	.apri_name h3 span {
+		display: inline-block;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 0 1em;
+		position: relative;
+	}
+	.apri_name h3 span:before,
+	.apri_name h3 span:after {
+		border-top: 10px solid;
+		content: "";
+		position: absolute;
+		top: 35%;
+		width: 99em;
+	}
+	.apri_name h3 span:before {
+		right: 100%;
+	}
+
+	.apri_name h3 span:after {
+		left: 100%;
+	}
+	form#file_upload_area{
+		display: block;
+		margin: 50px auto 0;
+	}
+	.file_upload_area_wrap{
+		margin: 0 auto;
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		background-color: #efefef;
+	}
+	.upload_area{
+		margin: auto;
+		width: 100%;
+		position: relative;
+		border: 3px dashed #fff;
+	}
+	.upload_area p{
+		font-size: 13px;
+		margin-top: 15px;
+		letter-spacing:0;
+	}
+	.upload_area img {
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin: 7.5vh auto;
+	}
+	#input-files {
+		top: 0;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	#file_name {
+		width: 100%;
+		position: absolute;
+		bottom: 15px;
+		font-size: 10px;
+		color: #333;
+		text-align: center;
+	}
+	.upload_area.dragging {
+		border-color: #23b1b2;
+	}
+	.file_upload_btn_area{
+		margin-top: 50px;
+		text-align: center;
+	}
+	#file_cancel_btn,
+	#file_submit_btn{
+		display:inline-block;
+		color: #fff;
+		font-size: 13px;
+		letter-spacing:1px;
+		border-radius: 10px;
+		width: 150px;
+		height:40px;
+		background-color:#23b1b2;
+		border: none;
+		box-shadow:none;
+		cursor: pointer;
+	}
+	#file_cancel_btn:hover,
+	#file_submit_btn:hover{
+		background-color:#19A1A2;
+	}
+	#file_submit_btn:active{
+		background-color:#19A1A2;
+	}
+	.view_area .image{
+		width: 100%;
+		position: absolute;
+		bottom: 0; left:0;
+		z-index:-1;
+	}
+	.view_area .image img{
+		width: 100%;
+		height: auto;
+	}
+}
