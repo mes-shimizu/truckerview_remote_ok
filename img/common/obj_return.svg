@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="L_Leergrundriss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.74 28.91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="20.87 28.91 31.74 23.15 20.87 17.61 20.87 28.91"/>
+  <path class="cls-1" d="m0,12.67c0,6.99,5.68,12.67,12.66,12.67h15.09v-3.92h-15.09c-4.82,0-8.75-3.93-8.75-8.76S7.84,3.91,12.66,3.91h15.09V0h-15.09C5.68,0,0,5.67,0,12.67Z"/>
+</svg>
