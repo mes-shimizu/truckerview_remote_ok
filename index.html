@@ -46,6 +46,12 @@
 			</h1>
 			<div class="port_name eng bold bg_blue white">Shimizu Container Terminal</div>
 			<div class="update_time jap t_right">[ 更新日時 ]2023.10.5-14:15:22</div>
+			<div class="company_logo no_repeat"></div>
+		            <div class="return">
+		                <button class="white" id="bt_back">
+		                    <img src="img/common/obj_return.svg" alt="戻るボタン">
+		                </button>
+		            </div>
 			<div class="update">
 				<button class="white">
 					<img src="img/common/obj_update.svg" alt="更新ボタン">
@@ -62,7 +68,7 @@
 	</header><!--header_input-->
 	
 	
-	<section class="view_area">
+	<section class="view_area"  id="view_area">
 		<div class="head_data">
 			<ul>
 				<li>
@@ -83,11 +89,14 @@
 				</li>
 			</ul>
 		</div><!--head_data-->
-		<div class="signal">
-			<img src="img/mark/obj_ok_circle.svg" alt="○マーク">
-			<img class="flicker" src="img/mark/obj_ok_circle_hover.svg" alt="○マーク"><!--フリック時の○マーク-->
-			<p class="ok_lane green bold"><span>2E21/22</span>進入可</p>
-			<p class="attention">交通整理員がいる場合は指示に従ってください</p>
+		<div class="signal_fixed">
+			<div class="signal signal-ani1" id="pnl_signal_ani">
+				<p class="no_sound_text green signal-ani2" id="p_no_sound_text">　</p>
+				<img src="img/mark/obj_ok_circle.svg" alt="○マーク">
+				<img class="flicker signal-ani3" src="img/mark/obj_ok_circle_hover.svg" alt="○マーク"><!--フリック時の○マーク-->
+				<p class="ok_lane green bold signal-ani2" id="p_ok_lane""><span>2E21/22</span>進入可</p>
+				<p class="attention signal-ani4">交通整理員がいる場合は指示に従ってください</p>
+			</div>
 		</div><!--signal-->
 		<div class="lane_view">
 			<ul>
